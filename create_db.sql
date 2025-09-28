@@ -1,0 +1,29 @@
+-- create_db.sql
+-- SQLite schema and inserts for Task 4 sample data
+
+DROP TABLE IF EXISTS employees;
+CREATE TABLE employees (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    department TEXT,
+    salary REAL,
+    bonus REAL,
+    notes TEXT,
+    age INTEGER,
+    hire_date TEXT
+);
+
+-- Inserts
+INSERT INTO employees (id, name, department, salary, bonus, notes, age, hire_date) VALUES
+(1, 'Asha', 'Sales', 45000, 2000, NULL, 29, '2020-05-10'),
+(2, 'Ravi', 'Engineering', 70000, 5000, NULL, 32, '2019-03-20'),
+(3, 'Neha', 'HR', 38000, NULL, NULL, 27, '2021-07-15'),
+(4, 'Karan', 'Engineering', 80000, 7000, NULL, 35, '2018-11-01'),
+(5, 'Priya', 'Sales', 52000, 1500, NULL, 30, '2022-01-05'),
+(6, 'Suman', 'Marketing', 48000, 1000, NULL, 28, '2020-08-22'),
+(7, 'Arjun', 'Finance', 60000, 3000, NULL, 33, '2017-09-10'),
+(8, 'Meera', 'Engineering', 75000, 4000, NULL, 31, '2019-12-01'),
+(9, 'Tara', 'Marketing', 47000, NULL, NULL, 26, '2021-03-18'),
+(10, 'Vikram', 'Sales', 58000, 2500, NULL, 34, '2016-05-25'),
+(11, 'Lina', 'HR', 41000, 500, NULL, 29, '2018-04-12'),
+(12, 'Deepak', 'Finance', 62000, 3500, NULL, 36, '2015-10-30');
